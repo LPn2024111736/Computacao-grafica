@@ -21,11 +21,11 @@ def register():
 def pronouns():
     gender=genderOption.get()
     match gender:
-        case "Male":
+        case "him":
             labelPronouns.config(text="Pronouns: He/Him")
-        case "Female":
+        case "her":
             labelPronouns.config(text="Pronouns: She/Her")
-        case "Other":
+        case "them":
             labelPronouns.config(text="Pronouns: They/Them")
         
 #definição inicial, cada parte tem um frame para si, incluindo o botão de registar + as mensagens de texto
@@ -84,4 +84,5 @@ labelLogin =tk.Label(loginFrame, text="Register to display welcome message")
 labelLogin.pack()
 
 #mainloop
+
 root.mainloop()
